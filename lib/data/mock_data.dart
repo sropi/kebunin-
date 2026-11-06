@@ -1,0 +1,370 @@
+import 'package:flutter/material.dart';
+import '../models/category.dart';
+import '../models/product.dart';
+import '../models/order.dart';
+import '../models/user_profile.dart';
+
+class MockData {
+  static const List<Category> categories = [
+    Category(
+      id: 'cat_all',
+      name: 'Semua',
+      icon: Icons.grid_view_rounded,
+      description: 'Semua sayur & hasil tani',
+      productCount: 12,
+    ),
+    Category(
+      id: 'cat_daun',
+      name: 'Sayur Daun',
+      icon: Icons.eco_outlined,
+      description: 'Bayam, kangkung, sawi segar',
+      productCount: 4,
+    ),
+    Category(
+      id: 'cat_buah',
+      name: 'Sayur Buah',
+      icon: Icons.local_florist_outlined,
+      description: 'Tomat, brokoli, terong, jagung',
+      productCount: 3,
+    ),
+    Category(
+      id: 'cat_umbi',
+      name: 'Umbi-umbian',
+      icon: Icons.agriculture_outlined,
+      description: 'Wortel, kentang, ubi jalar',
+      productCount: 2,
+    ),
+    Category(
+      id: 'cat_bumbu',
+      name: 'Bumbu & Cabai',
+      icon: Icons.whatshot_outlined,
+      description: 'Cabai rawit, bawang, rempah',
+      productCount: 2,
+    ),
+    Category(
+      id: 'cat_paket',
+      name: 'Paket Masak',
+      icon: Icons.kitchen_outlined,
+      description: 'Paket sop, sayur asem, lodeh',
+      productCount: 1,
+    ),
+  ];
+
+  static const List<Product> products = [
+    Product(
+      id: 'prod_bayam',
+      name: 'Bayam Hijau Organik',
+      indonesianName: 'Bayam Petani Lembang',
+      categoryId: 'cat_daun',
+      price: 8000,
+      originalPrice: 10000,
+      unit: '/ ikat',
+      description:
+          'Bayam hijau pilihan yang dipanen subuh hari dari petani lokal Lembang. Daun renyah, segar, bebas pestisida kimia sintetis, kaya zat besi dan serat alami.',
+      imageUrl:
+          'https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=600&q=80',
+      rating: 4.9,
+      reviewCount: 254,
+      isOrganic: true,
+      isFreshHarvest: true,
+      isPopular: true,
+      isRecommended: true,
+      stock: 45,
+    ),
+    Product(
+      id: 'prod_wortel',
+      name: 'Wortel Manis Berastagi',
+      indonesianName: 'Wortel Lokal Pilihan',
+      categoryId: 'cat_umbi',
+      price: 12000,
+      originalPrice: 15000,
+      unit: '/ 500 gram',
+      description:
+          'Wortel segar Berastagi dengan rasa manis alami dan renyah. Sangat baik untuk jus kesehatan, campuran sop harian, maupun masakan tumis bergizi.',
+      imageUrl:
+          'https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?auto=format&fit=crop&w=600&q=80',
+      rating: 4.8,
+      reviewCount: 189,
+      isOrganic: true,
+      isFreshHarvest: true,
+      isPopular: true,
+      isRecommended: false,
+      stock: 35,
+    ),
+    Product(
+      id: 'prod_tomat',
+      name: 'Tomat Merah Segar Dewy',
+      indonesianName: 'Tomat Kebun Malang',
+      categoryId: 'cat_buah',
+      price: 10000,
+      originalPrice: null,
+      unit: '/ 500 gram',
+      description:
+          'Tomat merah segar berair dengan keseimbangan rasa asam-manis yang pas. Dipetik tepat saat matang di pohon untuk menjaga kadar likopen maksimal.',
+      imageUrl:
+          'https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=600&q=80',
+      rating: 4.7,
+      reviewCount: 142,
+      isOrganic: true,
+      isFreshHarvest: true,
+      isPopular: true,
+      isRecommended: true,
+      stock: 60,
+    ),
+    Product(
+      id: 'prod_brokoli',
+      name: 'Brokoli Hijau Super',
+      indonesianName: 'Brokoli Organik Ciwidey',
+      categoryId: 'cat_buah',
+      price: 18000,
+      originalPrice: 22000,
+      unit: '/ 500 gram',
+      description:
+          'Kuntum brokoli hijau padat tanpa ulat dengan kesegaran maksimal. Dikemas rapat higienis, tinggi antioksidan dan vitamin C untuk keluarga tercinta.',
+      imageUrl:
+          'https://images.unsplash.com/photo-1584270354949-c26b0d5b4a0c?auto=format&fit=crop&w=600&q=80',
+      rating: 4.9,
+      reviewCount: 310,
+      isOrganic: true,
+      isFreshHarvest: true,
+      isPopular: true,
+      isRecommended: true,
+      stock: 25,
+    ),
+    Product(
+      id: 'prod_kentang',
+      name: 'Kentang Dieng Grade A',
+      indonesianName: 'Kentang Dataran Tinggi Dieng',
+      categoryId: 'cat_umbi',
+      price: 15000,
+      originalPrice: null,
+      unit: '/ kg',
+      description:
+          'Kentang dataran tinggi Dieng bertekstur pulen, berukuran seragam dan bersih. Cocok untuk perkedel, kentang goreng renyah, atau sup hangat.',
+      imageUrl:
+          'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=600&q=80',
+      rating: 4.8,
+      reviewCount: 98,
+      isOrganic: false,
+      isFreshHarvest: true,
+      isPopular: false,
+      isRecommended: true,
+      stock: 80,
+    ),
+    Product(
+      id: 'prod_kangkung',
+      name: 'Kangkung Akar Segar',
+      indonesianName: 'Kangkung Hidroponik Subang',
+      categoryId: 'cat_daun',
+      price: 7000,
+      originalPrice: 9000,
+      unit: '/ ikat',
+      description:
+          'Kangkung segar dengan batang renyah dan daun hijau cerah. Ditanam dengan air pegunungan jernih, bebas lumpur, sangat nikmat untuk tumis terasi gurih.',
+      imageUrl:
+          'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80',
+      rating: 4.9,
+      reviewCount: 420,
+      isOrganic: true,
+      isFreshHarvest: true,
+      isPopular: true,
+      isRecommended: true,
+      stock: 55,
+    ),
+    Product(
+      id: 'prod_cabai',
+      name: 'Cabai Rawit Merah Pedas',
+      indonesianName: 'Cabai Rawit Domba Kediri',
+      categoryId: 'cat_bumbu',
+      price: 14000,
+      originalPrice: 17000,
+      unit: '/ 250 gram',
+      description:
+          'Cabai rawit merah pedas menyengat dengan aroma khas yang segar. Dipetik segar dari sentra cabai Kediri dengan kualitas warna merah menyala.',
+      imageUrl:
+          'https://images.unsplash.com/photo-1588252303782-cb80119abd6d?auto=format&fit=crop&w=600&q=80',
+      rating: 4.8,
+      reviewCount: 205,
+      isOrganic: false,
+      isFreshHarvest: true,
+      isPopular: true,
+      isRecommended: false,
+      stock: 40,
+    ),
+    Product(
+      id: 'prod_sawi',
+      name: 'Sawi Sendok / Pakcoy Baby',
+      indonesianName: 'Pakcoy Hidroponik',
+      categoryId: 'cat_daun',
+      price: 9000,
+      originalPrice: null,
+      unit: '/ 300 gram',
+      description:
+          'Pakcoy baby hidroponik yang sangat renyah dan empuk saat dimasak. Bebas pestisida dan tidak pahit, pas untuk tumis bawang putih atau ramen.',
+      imageUrl:
+          'https://images.unsplash.com/photo-1543362906-acfc16c67564?auto=format&fit=crop&w=600&q=80',
+      rating: 4.7,
+      reviewCount: 88,
+      isOrganic: true,
+      isFreshHarvest: true,
+      isPopular: false,
+      isRecommended: true,
+      stock: 30,
+    ),
+    Product(
+      id: 'prod_jagung',
+      name: 'Jagung Manis Madu',
+      indonesianName: 'Jagung Manis Boyolali',
+      categoryId: 'cat_buah',
+      price: 11000,
+      originalPrice: 13000,
+      unit: '/ 2 pcs',
+      description:
+          'Jagung manis dengan bulir penuh berwarna kuning keemasan. Rasa manis legit tanpa perlu gula tambahan, pas untuk bakwan jagung atau sup hangat.',
+      imageUrl:
+          'https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&w=600&q=80',
+      rating: 4.8,
+      reviewCount: 165,
+      isOrganic: true,
+      isFreshHarvest: true,
+      isPopular: false,
+      isRecommended: true,
+      stock: 45,
+    ),
+    Product(
+      id: 'prod_bawang',
+      name: 'Bawang Merah Brebes Super',
+      indonesianName: 'Bawang Merah Asli Brebes',
+      categoryId: 'cat_bumbu',
+      price: 22000,
+      originalPrice: 26000,
+      unit: '/ 500 gram',
+      description:
+          'Bawang merah varietas Brebes dengan umbi padat, warna ungu kemerahan, dan aroma wangi gurih yang kuat. Pilihan utama dapur nusantara.',
+      imageUrl:
+          'https://images.unsplash.com/photo-1618512496248-a07fe83aa8cb?auto=format&fit=crop&w=600&q=80',
+      rating: 4.9,
+      reviewCount: 312,
+      isOrganic: false,
+      isFreshHarvest: true,
+      isPopular: true,
+      isRecommended: false,
+      stock: 50,
+    ),
+    Product(
+      id: 'prod_paket_sop',
+      name: 'Paket Sayur Sop Lengkap',
+      indonesianName: 'Paket Sayur Segar Hemat',
+      categoryId: 'cat_paket',
+      price: 15000,
+      originalPrice: 18000,
+      unit: '/ paket praktis',
+      description:
+          'Paket hemat lengkap isi wortel, kol kubis, buncis, kentang, daun bawang, seledri, dan bumbu racik. Praktis tinggal cuci dan masak untuk 3-4 porsi.',
+      imageUrl:
+          'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80',
+      rating: 4.9,
+      reviewCount: 520,
+      isOrganic: true,
+      isFreshHarvest: true,
+      isPopular: true,
+      isRecommended: true,
+      stock: 65,
+    ),
+  ];
+
+  static final UserProfile defaultUser = UserProfile(
+    id: 'user_001',
+    name: 'Budi Santoso',
+    email: 'budi.santoso@kebunin.id',
+    phone: '0812-3456-7890',
+    address: 'Jl. Kebon Jeruk Indah No. 12, RT 04 / RW 02',
+    city: 'Jakarta Barat',
+    postalCode: '11530',
+    memberTier: 'Sahabat Petani Gold',
+    points: 480,
+    avatarUrl:
+        'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=400&q=80',
+  );
+
+  static final List<Order> initialOrders = [
+    Order(
+      id: 'ord_101',
+      orderNumber: 'KBN-20261103-01',
+      createdAt: DateTime.now().subtract(const Duration(hours: 3)),
+      items: [
+        OrderItem(product: products[0], quantity: 2, price: products[0].price),
+        OrderItem(product: products[1], quantity: 1, price: products[1].price),
+        OrderItem(product: products[2], quantity: 2, price: products[2].price),
+      ],
+      subtotal: 48000,
+      shippingCost: 10000,
+      discount: 5000,
+      status: OrderStatus.dikirim,
+      recipientName: 'Budi Santoso',
+      recipientPhone: '0812-3456-7890',
+      shippingAddress:
+          'Jl. Kebon Jeruk Indah No. 12, RT 04 / RW 02, Jakarta Barat 11530',
+      paymentMethod: 'GoPay / QRIS Instant',
+      courierName: 'Kurir Dingin KEBUNIN Express (Pak Rahmat)',
+      trackingNumber: 'KBN-EXP-992014',
+      trackingSteps: [
+        TrackingStep(
+          title: 'Pesanan Dikonfirmasi',
+          description: 'Pembayaran telah diverifikasi secara otomatis.',
+          time: DateTime.now().subtract(const Duration(hours: 3)),
+          isCompleted: true,
+        ),
+        TrackingStep(
+          title: 'Sayur Dipetik & Dikemas',
+          description: 'Dipacking dingin higienis dari hub tani Lembang.',
+          time: DateTime.now().subtract(const Duration(hours: 2)),
+          isCompleted: true,
+        ),
+        TrackingStep(
+          title: 'Dalam Perjalanan Menuju Alamat',
+          description: 'Kurir KEBUNIN sedang menuju alamat pengantaran Anda.',
+          time: DateTime.now().subtract(const Duration(minutes: 40)),
+          isCompleted: true,
+          isCurrent: true,
+        ),
+        TrackingStep(
+          title: 'Pesanan Diterima',
+          description: 'Paket sayur diterima di rumah pelanggan.',
+          time: DateTime.now().add(const Duration(minutes: 25)),
+          isCompleted: false,
+        ),
+      ],
+    ),
+    Order(
+      id: 'ord_100',
+      orderNumber: 'KBN-20261028-09',
+      createdAt: DateTime.now().subtract(const Duration(days: 5)),
+      items: [
+        OrderItem(product: products[3], quantity: 1, price: products[3].price),
+        OrderItem(product: products[5], quantity: 3, price: products[5].price),
+      ],
+      subtotal: 39000,
+      shippingCost: 10000,
+      discount: 0,
+      status: OrderStatus.selesai,
+      recipientName: 'Budi Santoso',
+      recipientPhone: '0812-3456-7890',
+      shippingAddress:
+          'Jl. Kebon Jeruk Indah No. 12, RT 04 / RW 02, Jakarta Barat 11530',
+      paymentMethod: 'Transfer Bank BCA Virtual Account',
+      courierName: 'Kurir Dingin KEBUNIN Express',
+      trackingNumber: 'KBN-EXP-877209',
+      trackingSteps: [
+        TrackingStep(
+          title: 'Pesanan Selesai',
+          description: 'Sayur segar diterima dalam kondisi dingin & prima.',
+          time: DateTime.now().subtract(const Duration(days: 5)),
+          isCompleted: true,
+          isCurrent: true,
+        ),
+      ],
+    ),
+  ];
+}
+

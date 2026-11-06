@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'secondary-container': '#baee98', 'secondary-fixed': '#bdf19b', 'primary': '#054425', 'on-background': '#191d19', 'on-secondary-fixed': '#092100', 'inverse-on-surface': '#eff2eb', 'error': '#ba1a1a', 'on-surface-variant': '#414941', 'inverse-surface': '#2d312d', 'on-tertiary': '#ffffff', 'outline': '#717971', 'on-secondary': '#ffffff', 'primary-container': '#245c3a', 'surface-variant': '#e0e3dd', 'surface-container': '#ecefe8', 'on-primary-fixed-variant': '#175130', 'outline-variant': '#c0c9bf', 'on-error-container': '#93000a', 'surface-container-lowest': '#ffffff', 'tertiary-container': '#794500', 'on-secondary-fixed-variant': '#26500c', 'surface-container-high': '#e6e9e3', 'error-container': '#ffdad6', 'tertiary': '#583100', 'on-surface': '#191d19', 'surface-container-highest': '#e0e3dd', 'secondary': '#3d6923', 'on-error': '#ffffff', 'on-secondary-container': '#416e27', 'on-primary': '#ffffff', 'surface-tint': '#326946', 'tertiary-fixed-dim': '#ffb871', 'primary-fixed': '#b4f0c4', 'surface-container-low': '#f2f5ee', 'inverse-primary': '#99d4a9', 'on-tertiary-fixed-variant': '#6a3c00', 'on-tertiary-container': '#ffb66c', 'surface-dim': '#d8dbd5', 'background': '#f7faf4', 'on-primary-fixed': '#00210e', 'tertiary-fixed': '#ffdcbe', 'on-primary-container': '#97d2a7', 'on-tertiary-fixed': '#2d1600', 'secondary-fixed-dim': '#a2d581', 'surface-bright': '#f7faf4', 'primary-fixed-dim': '#99d4a9', 'surface': '#f7faf4' }, borderRadius: { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, spacing: { 'space-xl': '1.5rem', 'space-sm': '0.75rem', 'margin-lg': '1.5rem', 'margin': '1rem', 'space-xs': '0.5rem', 'gutter': '1rem', 'space-3xl': '3rem', 'space-2xl': '2rem', 'space-md': '1rem', 'gutter-sm': '0.5rem', 'space-2xs': '0.25rem', 'space-lg': '1.25rem' }, fontFamily: { 'headline-sm': ['Plus Jakarta Sans'], 'headline-xl': ['Plus Jakarta Sans'], 'body-md': ['Plus Jakarta Sans'], 'headline-md': ['Plus Jakarta Sans'], 'label-sm': ['Plus Jakarta Sans'], 'label-lg': ['Plus Jakarta Sans'], 'label-md': ['Plus Jakarta Sans'], 'body-sm': ['Plus Jakarta Sans'], 'price-md': ['Plus Jakarta Sans'], 'headline-lg': ['Plus Jakarta Sans'], 'price-sm-strikethrough': ['Plus Jakarta Sans'], 'body-lg': ['Plus Jakarta Sans'], 'price-lg': ['Plus Jakarta Sans'] }, fontSize: { 'headline-sm': ['18px', { lineHeight: '24px', fontWeight: '600' }], 'headline-xl': ['32px', { lineHeight: '40px', letterSpacing: '-0.02em', fontWeight: '800' }], 'body-md': ['14px', { lineHeight: '20px', fontWeight: '400' }], 'headline-md': ['22px', { lineHeight: '28px', letterSpacing: '-0.01em', fontWeight: '700' }], 'label-sm': ['10px', { lineHeight: '14px', letterSpacing: '0.04em', fontWeight: '700' }], 'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.01em', fontWeight: '600' }], 'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.02em', fontWeight: '600' }], 'body-sm': ['12px', { lineHeight: '16px', fontWeight: '400' }], 'price-md': ['15px', { lineHeight: '20px', fontWeight: '700' }], 'headline-lg': ['26px', { lineHeight: '34px', letterSpacing: '-0.015em', fontWeight: '700' }], 'price-sm-strikethrough': ['12px', { lineHeight: '16px', fontWeight: '400' }], 'body-lg': ['16px', { lineHeight: '24px', fontWeight: '400' }], 'price-lg': ['20px', { lineHeight: '26px', letterSpacing: '-0.01em', fontWeight: '800' }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 500,'GRAD' 0,'opsz' 24;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-6 px-margin flex items-center justify-between text-on-surface select-none pt-1"><span class="font-label-sm text-label-sm font-bold tracking-tight text-on-surface">09:41</span><div class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-[14px] leading-none">signal_cellular_alt</span><span class="material-symbols-outlined text-[14px] leading-none">wifi</span><span class="material-symbols-outlined text-[14px] leading-none">battery_full</span></div></div><div class="h-14 px-margin flex items-center justify-between"><div class="flex items-center gap-space-xs"><img alt="KEBUNIN Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WL02ehTlI6PxjIRIkuZM2ibx7Zpv92Vuj_gPt2IF0l5SkjQJj6EK2bBudbklDbPldXOOCzdPX03G0T8RWmdCA1KWMdmWsiPg90mSk44qReRMgMByzg9D9UZa3i1-veQy70moL5J3VUSfEqenpj3su3UDE5uZA8uks93lC2qrXvNpwQEL0VhGXz9SEhO8rTyz-4hDpp39EXZnw4W-UfqN92mrDwEbAygpE5w47reo48"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary-container leading-tight">KEBUNIN</span><span class="font-label-sm text-label-sm text-on-surface-variant font-normal uppercase tracking-wider">Pasar Segar Organik</span></div></div><div class="flex items-center gap-space-sm"><div class="text-right hidden sm:flex flex-col"><span class="font-label-md text-label-md text-on-surface font-semibold">Kategori</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkXALXzibdcnL7jllUz5RLgEpD2HrZ6wmLE1QkkLZXnZKHtG9EvIyRDMNJ4vnbh4iur-DRVbeuHQesui0rCu7hszJoZg3XYc7w6v-Snx83yHD7O3UAnzhy-7IM4WGF-Y2GUm1TftfS9RWsqZ4bn4ewXbKGv1RXVxDSIIu7PmPKDsV1zWlGKHUD-k6Aa7eK0_fAhL84E3yjmqiq-NZAq-vvJnY00fUT1Hf1-VdfUOA"/></div></div></header><main class="flex flex-col relative w-full pt-20 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="px-margin pt-space-xs pb-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Katalog Lengkap</span>
+<h1 class="font-headline-md text-headline-md text-on-surface">Kategori Belanja</h1>
+</div>
+<div class="w-10 h-10 rounded-full bg-secondary-container/40 flex items-center justify-center text-primary-container shadow-sm">
+<span class="material-symbols-outlined text-[20px]">eco</span>
+</div>
+</div>
+<div class="relative w-full">
+<div class="absolute inset-y-0 left-0 pl-space-sm flex items-center pointer-events-none text-outline">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="w-full h-11 pl-10 pr-10 bg-surface-container-low rounded-xl text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest transition-colors shadow-sm" id="category-search" placeholder="Cari jenis sayuran, jamur, umbi..." type="search"/>
+<button aria-label="Scan atau Filter Suara" class="absolute inset-y-0 right-0 pr-space-sm flex items-center text-outline hover:text-primary-container" type="button">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+</button>
+</div>
+</div>
+<div class="w-full overflow-x-auto no-scrollbar py-space-2xs pl-margin mb-space-sm">
+<div class="flex items-center gap-space-xs pr-margin">
+<button class="filter-chip active flex items-center gap-space-2xs px-space-md py-1.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-sm transition-all whitespace-nowrap" data-filter="all" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary-container" style="font-variation-settings: 'FILL' 1;">check</span>
+<span>Semua</span>
+</button>
+<button class="filter-chip flex items-center gap-space-2xs px-space-md py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md shadow-sm transition-all whitespace-nowrap" data-filter="organik" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span>Organik Sertifikasi</span>
+</button>
+<button class="filter-chip flex items-center gap-space-2xs px-space-md py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md shadow-sm transition-all whitespace-nowrap" data-filter="hidroponik" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">water_drop</span>
+<span>Hidroponik</span>
+</button>
+<button class="filter-chip flex items-center gap-space-2xs px-space-md py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md shadow-sm transition-all whitespace-nowrap" data-filter="lokal" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">handshake</span>
+<span>Lokal Mitra</span>
+</button>
+<button class="filter-chip flex items-center gap-space-2xs px-space-md py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md shadow-sm transition-all whitespace-nowrap" data-filter="paket" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">soup_kitchen</span>
+<span>Paket Masak</span>
+</button>
+</div>
+</div>
+<div class="px-margin mb-space-md">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-lg text-label-lg text-on-surface">Pilihan Panen Segar</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">6 Kategori Utama</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm" id="category-grid">
+<div class="group relative flex flex-col bg-surface-container-lowest rounded-xl p-space-xs shadow-sm hover:shadow-md transition-all active:scale-[0.98] text-left" role="button" tabindex="0">
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface-container-low mb-space-xs">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Vibrant studio shot of crisp green organic vegetables including curly kale, fresh baby spinach leaves, emerald pak choi, and butterhead lettuce arranged artfully with morning dew water droplets against soft natural lighting in a clean farm market aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDW2lG_SMfk8_SeOC3OkqrxLyzBsyaD4iU-kig-fDrJP37iRrQqm8zuMJIBTk81NVzJ-KiM6RYAglAdPL8VnUPVSfn_LSogKR5ACgCSp5oJda5bi04mfgyIC8Ua1HDaFhJEmn2KpBBvypbMnqQOWdi4uMUXCvSrmOe8L6L-uVX-1sXd20vEg0iWJpEaPcfTpcYpY4mN_AmtZX3wt8SOcxvqPNKxtuuK-2cGmsV-k-E"/>
+<div class="absolute top-1.5 left-1.5 px-2 py-0.5 rounded-full bg-secondary-container/95 text-on-secondary-fixed font-label-sm text-[10px] font-bold shadow-xs">
+            Subuh Ini
+          </div>
+</div>
+<div class="flex flex-col px-1 pb-1">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-snug group-hover:text-primary-container transition-colors">Sayuran Daun</span>
+<div class="flex items-center justify-between mt-space-2xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Bayam, Kale, Pakcoy</span>
+<span class="font-label-sm text-label-sm text-primary-container font-semibold bg-surface-container px-1.5 py-0.5 rounded-md">42 Produk</span>
+</div>
+</div>
+</div>
+<div class="group relative flex flex-col bg-surface-container-lowest rounded-xl p-space-xs shadow-sm hover:shadow-md transition-all active:scale-[0.98] text-left" role="button" tabindex="0">
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface-container-low mb-space-xs">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Lush still life photography of glossy ripe red vine tomatoes, crisp dark green mini cucumbers, deep violet Japanese eggplants, and sweet yellow and red bell peppers with water droplets under warm daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkop-9H3UqqyLD7Nr_Zw1MVNAjFiLabtjkfBFQvE8RbZ4OwqeBxZmhrBzb3TEq_2MuUXu7zEzpFqFVE73EZ_IZ6Y05NiYiDw17jFSQKwfhzVDcjz6-8gRaSsZbdIbAZbEHR7Nc59B2FsKzdjfvK6tWD958D9qIe0e32t6gDqp6b6hXNFXdMZ5DIcARBebVEaoj4DTq-Uz5nG8OJe8owVHZ3gT-OIlvrNoYsz-XWiM"/>
+<div class="absolute top-1.5 right-1.5 px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[10px] font-bold shadow-xs">
+            Favorit
+          </div>
+</div>
+<div class="flex flex-col px-1 pb-1">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-snug group-hover:text-primary-container transition-colors">Sayuran Buah</span>
+<div class="flex items-center justify-between mt-space-2xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tomat, Timun, Terong</span>
+<span class="font-label-sm text-label-sm text-primary-container font-semibold bg-surface-container px-1.5 py-0.5 rounded-md">35 Produk</span>
+</div>
+</div>
+</div>
+<div class="group relative flex flex-col bg-surface-container-lowest rounded-xl p-space-xs shadow-sm hover:shadow-md transition-all active:scale-[0.98] text-left" role="button" tabindex="0">
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface-container-low mb-space-xs">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Freshly harvested bright orange Dutch carrots with green tops, rustic baby potatoes, and purple honey sweet potatoes displayed on rustic canvas linen with soft warm daylight highlighting earthy textures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFEZX09_amI6SzQBzV4_NXYqIBIQ8VorPzfj-aKaQqvdYiFsJUVZ0V_wklLBeMy9-VKQJk5OGLvQg4sQib8N9rRZcTWEaZQUianUoJRNodkWgEBHO9iLpivPWuePp57DngwP9masVsn6RrPQG4W4ZvilrIaNXyy2fbleCoApmycKVNt-zQxfHdapxU79V6SP3TmnZag0yXll-Ik4-EIlqCTDymC2dkhc7swXHf3j0"/>
+</div>
+<div class="flex flex-col px-1 pb-1">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-snug group-hover:text-primary-container transition-colors">Umbi-umbian</span>
+<div class="flex items-center justify-between mt-space-2xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Wortel, Kentang, Ubi</span>
+<span class="font-label-sm text-label-sm text-primary-container font-semibold bg-surface-container px-1.5 py-0.5 rounded-md">28 Produk</span>
+</div>
+</div>
+</div>
+<div class="group relative flex flex-col bg-surface-container-lowest rounded-xl p-space-xs shadow-sm hover:shadow-md transition-all active:scale-[0.98] text-left" role="button" tabindex="0">
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface-container-low mb-space-xs">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Artisanal arrangement of fresh Brebes shallots, whole garlic heads, fiery red curly chillies, fresh fragrant ginger roots, and aromatic lemongrass stalks in an Indonesian kitchen pantry aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-3yO2bY3V_-lCqlBni5Ce97ul6SedOc20pZGFnHRXCrT14FZtZwuYls6Kb0v2FIYX0v2vKgCI1XkTdHbn4dEqgGYYmxekY3eRsMSbZUeuOumSDPT42TCmKf2AmYIN2872Pp5AixNLn4z6F0v0SmX9PLXknwOTezj3cG6kOJSAVObANAuKwQyNjoZdPOzpSrga5BkV-c4ok4HOT5u6vl2mkVDFzobxKOJ_qMqtTsM"/>
+<div class="absolute top-1.5 left-1.5 px-2 py-0.5 rounded-full bg-secondary-container/95 text-on-secondary-fixed font-label-sm text-[10px] font-bold shadow-xs">
+            Paling Laris
+          </div>
+</div>
+<div class="flex flex-col px-1 pb-1">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-snug group-hover:text-primary-container transition-colors">Bumbu Dapur</span>
+<div class="flex items-center justify-between mt-space-2xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Bawang, Cabai, Jahe</span>
+<span class="font-label-sm text-label-sm text-primary-container font-semibold bg-surface-container px-1.5 py-0.5 rounded-md">50 Produk</span>
+</div>
+</div>
+</div>
+<div class="group relative flex flex-col bg-surface-container-lowest rounded-xl p-space-xs shadow-sm hover:shadow-md transition-all active:scale-[0.98] text-left" role="button" tabindex="0">
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface-container-low mb-space-xs">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Organic cultivated white oyster mushrooms, button champignon mushrooms, earthy shiitake, and delicate bundles of golden enoki mushrooms arranged on dark slate with mist and natural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJHgchsZS23QQ7GV2_9UGsIsTbWeK3FPeyQva31XTB-W12W9IRUM8XjuuhDy0Kcb_dNigR2Mw9omxVFOARWQlRb8QI5QBMVz52hzgCSxv9rDZWrwK7zBNu4ZXEiD_3m-vZxxLLQ1FqOpSZoMc1ObIN809AWj7LfGgljTaosM2X-HVd8bkGcVSPWhXNaNbXvDlsJ7aHjoKn5U9iQkb9w7_nGGj1FyGmtNwJBY4TXk4"/>
+</div>
+<div class="flex flex-col px-1 pb-1">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-snug group-hover:text-primary-container transition-colors">Jamur</span>
+<div class="flex items-center justify-between mt-space-2xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tiram, Kancing, Enoki</span>
+<span class="font-label-sm text-label-sm text-primary-container font-semibold bg-surface-container px-1.5 py-0.5 rounded-md">16 Produk</span>
+</div>
+</div>
+</div>
+<div class="group relative flex flex-col bg-surface-container-lowest rounded-xl p-space-xs shadow-sm hover:shadow-md transition-all active:scale-[0.98] text-left" role="button" tabindex="0">
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface-container-low mb-space-xs">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Lush bouquet of certified organic green vegetables with natural morning dew drops, featuring fresh swiss chard, aromatic wild mint, and pesticide-free heirloom vegetables under soft morning sunrise illumination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSYplgF6BDpdI2Gq4XhP9tH8KvOdLIyYkwnVJes_0L6t9QSAoZnZh_cvJOYnax8aVa5IdCuFCxqo1Rkl2JtJYzrT4dC676dCZA6HBP6pexREXSXuKB3YnImAHEimL7dAMOc3pb6VfHATBHn_blr4JpDTwS1rI63sF1Ca5FDrcKNx_2JUySaH4i5NrbVNp18-KSrhC6RtkkMUZqptdtrMQsp0WAQkn3S-Hro-wveyg"/>
+<div class="absolute top-1.5 left-1.5 px-2 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-[10px] font-bold shadow-xs flex items-center gap-1">
+<span class="material-symbols-outlined text-[11px]" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span>100% Organik</span>
+</div>
+</div>
+<div class="flex flex-col px-1 pb-1">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-snug group-hover:text-primary-container transition-colors">Sayuran Organik</span>
+<div class="flex items-center justify-between mt-space-2xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sertifikasi Resmi SNI</span>
+<span class="font-label-sm text-label-sm text-primary-container font-semibold bg-surface-container px-1.5 py-0.5 rounded-md">24 Produk</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="px-margin mb-space-xl">
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-r from-primary via-primary-container to-secondary p-space-md text-on-primary shadow-md flex items-center gap-space-md">
+<div class="absolute -right-6 -bottom-6 w-28 h-28 rounded-full bg-secondary-container/20 pointer-events-none"></div>
+<div class="w-12 h-12 rounded-full bg-secondary-container/30 flex items-center justify-center shrink-0 text-secondary-fixed">
+<span class="material-symbols-outlined text-[28px]">wb_twilight</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center gap-space-2xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed font-bold">Komitmen KEBUNIN</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+<span class="font-label-sm text-label-sm text-inverse-on-surface opacity-80">Jaminan Mutu</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-primary leading-tight mt-0.5">Jaminan Panen Subuh</span>
+<p class="font-body-sm text-body-sm text-inverse-on-surface mt-1 opacity-90 line-clamp-2">
+          Dipetik jam 04:00 langsung dari ladang mitra, disortir cermat, dan dikirim segar ke dapur Anda pagi ini.
+        </p>
+</div>
+<div class="hidden sm:flex shrink-0">
+<span class="material-symbols-outlined text-[24px] text-secondary-fixed">arrow_forward</span>
+</div>
+</div>
+</div>
+<div class="px-margin mb-space-lg">
+<div class="bg-surface-container-low rounded-xl p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[18px]">help_center</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Butuh sayur khusus restoran?</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Hubungi layanan pesanan grosir B2B</span>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary-container font-label-md text-label-md font-bold shadow-xs active:bg-surface-container" type="button">
+        Chat Admin
+      </button>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const bottomNav = document.querySelector('nav');
+    if (bottomNav) {
+      const items = bottomNav.querySelectorAll('a[data-path]');
+      items.forEach(item => {
+        const path = item.getAttribute('data-path');
+        const indicator = item.querySelector('.indicator');
+        const icon = item.querySelector('.material-symbols-outlined');
+        const label = item.querySelector('span:not(.indicator):not(.material-symbols-outlined):not([class*="bg-tertiary"])');
+
+        if (path === 'kategori') {
+          item.classList.remove('text-on-surface-variant');
+          item.classList.add('text-primary-container', 'font-bold');
+          if (indicator) {
+            indicator.classList.remove('opacity-0', 'scale-75');
+            indicator.classList.add('opacity-100', 'scale-100');
+          }
+          if (icon) {
+            icon.style.fontVariationSettings = "'FILL' 1";
+          }
+        } else {
+          item.classList.add('text-on-surface-variant');
+          item.classList.remove('text-primary-container', 'font-bold');
+          if (indicator) {
+            indicator.classList.add('opacity-0', 'scale-75');
+            indicator.classList.remove('opacity-100', 'scale-100');
+          }
+          if (icon) {
+            icon.style.fontVariationSettings = "'FILL' 0";
+          }
+        }
+      });
+    }
+
+    const filterChips = document.querySelectorAll('.filter-chip');
+    filterChips.forEach(chip => {
+      chip.addEventListener('click', function() {
+        filterChips.forEach(c => {
+          c.classList.remove('bg-primary-container', 'text-on-primary', 'active');
+          c.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+          const chipIcon = c.querySelector('.material-symbols-outlined');
+          if (chipIcon) {
+            chipIcon.classList.remove('text-secondary-container');
+            chipIcon.classList.add('text-secondary');
+            chipIcon.textContent = chipIcon.textContent === 'check' ? 'eco' : chipIcon.textContent;
+          }
+        });
+        
+        this.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+        this.classList.add('bg-primary-container', 'text-on-primary', 'active');
+        const activeIcon = this.querySelector('.material-symbols-outlined');
+        if (activeIcon) {
+          activeIcon.classList.remove('text-secondary');
+          activeIcon.classList.add('text-secondary-container');
+        }
+      });
+    });
+
+    const searchInput = document.getElementById('category-search');
+    const categoryGrid = document.getElementById('category-grid');
+    if (searchInput && categoryGrid) {
+      searchInput.addEventListener('input', function(e) {
+        const query = e.target.value.toLowerCase();
+        const cards = categoryGrid.querySelectorAll('.group');
+        cards.forEach(card => {
+          const text = card.textContent.toLowerCase();
+          if (text.includes(query)) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-4px_16px_rgba(0,0,0,0.03)]" data-active-classes="text-primary-container font-bold [&amp;&gt;div&gt;span.indicator]:scale-100 [&amp;&gt;div&gt;span.indicator]:opacity-100"><div class="flex items-center justify-around h-16 px-gutter-sm"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-space-2xs text-on-surface-variant transition-colors group" data-path="beranda" href="#"><div class="relative flex items-center justify-center"><span class="indicator absolute inset-0 -mx-2 -my-0.5 rounded-full bg-secondary-container/50 opacity-0 scale-75 transition-all duration-200"></span><span class="material-symbols-outlined relative z-10 text-[22px]">home</span></div><span class="font-label-sm text-label-sm tracking-normal">Beranda</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-space-2xs transition-colors group text-primary-container font-bold [&amp;&gt;div&gt;span.indicator]:scale-100 [&amp;&gt;div&gt;span.indicator]:opacity-100" data-path="kategori" href="#"><div class="relative flex items-center justify-center"><span class="indicator absolute inset-0 -mx-2 -my-0.5 rounded-full bg-secondary-container/50 opacity-0 scale-75 transition-all duration-200"></span><span class="material-symbols-outlined relative z-10 text-[22px]">category</span></div><span class="font-label-sm text-label-sm tracking-normal">Kategori</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-space-2xs text-on-surface-variant transition-colors group" data-path="keranjang-belanja" href="#"><div class="relative flex items-center justify-center"><span class="indicator absolute inset-0 -mx-2 -my-0.5 rounded-full bg-secondary-container/50 opacity-0 scale-75 transition-all duration-200"></span><span class="material-symbols-outlined relative z-10 text-[22px]">shopping_basket</span><span class="absolute -top-1 -right-2 min-w-[16px] h-4 px-1 rounded-full bg-tertiary text-on-tertiary font-label-sm text-[9px] font-bold flex items-center justify-center z-20">3</span></div><span class="font-label-sm text-label-sm tracking-normal">Keranjang</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-space-2xs text-on-surface-variant transition-colors group" data-path="pesanan-saya" href="#"><div class="relative flex items-center justify-center"><span class="indicator absolute inset-0 -mx-2 -my-0.5 rounded-full bg-secondary-container/50 opacity-0 scale-75 transition-all duration-200"></span><span class="material-symbols-outlined relative z-10 text-[22px]">receipt_long</span></div><span class="font-label-sm text-label-sm tracking-normal">Pesanan</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-space-2xs text-on-surface-variant transition-colors group" data-path="profil-akun" href="#"><div class="relative flex items-center justify-center"><span class="indicator absolute inset-0 -mx-2 -my-0.5 rounded-full bg-secondary-container/50 opacity-0 scale-75 transition-all duration-200"></span><span class="material-symbols-outlined relative z-10 text-[22px]">person</span></div><span class="font-label-sm text-label-sm tracking-normal">Profil</span></a></div></nav></body></html>
